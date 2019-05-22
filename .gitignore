@@ -1,0 +1,80 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio Code
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Doxygen
+Step-5/fccfMQTT-docs/html/*
+Step-6/SensehatDemo-docs/html/*
+
+# UML out dir for images
+out/*
+
+# depend files
+depend
+
+# buildnumber file
+buildnumber.num
+
+# Executables
+Introduction/Rectangle/rectangle
+Introduction/ArrayTemplateClass/arraytemplateclass
+Introduction/CallByReference/callbyreference
+Introduction/Filestreams/filestreams
+Step-1/Namespaces/namespaces
+Step-1/Strings/Intro/introStrings
+Step-1/Strings/Formatting/formattingStrings
+Step-2/Rectangle/rectangle
+Step-2/Iterators/iterators
+Step-2/LambdaFunctions/lambdaFunctions
+Step-2/Tokenizer/tokenizer
+Step-2/ObjectSelfie/objectSelfie
+Step-3/PairsMaps/pairsMaps
+Step-3/Controllers/controllers
+Step-3/stdFunction/stdfunction
+Step-4/LedMatrixDemo/ledmatrixDemo
+Step-4/SensorDemo/sensorDemo
+Step-4/SensorDemo/RTIMULib.ini
+Step-4/LedMatrixDemo/RTIMULib.ini
+Step-5/RAII/raii
+Step-5/fccfMQTT/fccfMQTT
+Step-5/RoombaSerialLinkDemo/roombaSerialLinkDemo
+Step-5/SerialLinkDemo/serialLinkDemo
+Step-6/SensehatDemo/sensehatDemo
+Step-6/ClocksTimers/clockstimers
+Step-7/Typecasting/typecasting
