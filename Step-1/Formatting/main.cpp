@@ -6,18 +6,12 @@ using namespace std;
 int main()
 {
    int n = 70;
+   // std::dec and std::hex I/O manipulaters
+   cout << "n = " << dec << n << " hex = " << hex << n << endl;
+   cout << 255 << " reset to dec " << dec << 255 << endl;
 
-   cout << "n = " << dec << n << " hex = " << hex << n << endl
-        << "n = " << dec << n << " dec = " << dec << n << endl;
-
-   // Use cout object functions and format flags in namespace ios
-   cout.flags(ios::right | ios::hex | ios::showbase);
-   cout.width(40);
-   cout << 100 << endl << endl;
-
-   cout.flags(ios::left | ios::dec | ios::showbase);
-   cout.width(25);
-   cout << 100 << endl << endl;
+   // Store default format status cout
+   std::ios_base::fmtflags fmtf(cout.flags());
 
    // formatting booleans in text or value format
    bool bft = true;
@@ -26,15 +20,35 @@ int main()
    cout << "boolean bft = " << noboolalpha << bft << endl;
    cout << endl;
 
-   // formatting doubles
+   // Restore default format status cout
+   cout.flags(fmtf);
+
+   // Formatting doubles
    double a = 3.1415926534;
-   double b = 2006.0;
+   double b = 2019.0;
    double c = 1.123e-10; // scientific notation
 
-   cout.precision(5);
-   cout << a << '\t' << b << '\t' << c << endl << endl;
-   cout << fixed << a << '\t' << b << '\t' << c << endl << endl;
-   cout << scientific << a << '\t' << b << '\t' << c << endl << endl;
+   cout << "Default: \n" << a << "  " << b << "  " << c << endl << endl;
+   for (int pcs = 0; pcs < 9; pcs++) {
+      cout.precision(pcs);
+      cout << a << "   " << b << "    " << c << endl;
+   }
+   cout << "\nfixed:\n" << fixed << a << "  " << b << "  " << c << endl << endl;
+   cout << "scientific:\n"
+        << scientific << a << "  " << b << "  " << c << endl
+        << endl;
+
+   // Restore default format status cout
+   cout.flags(fmtf);
+   // Use cout member functions and format flags in namespace ios
+   cout.flags(ios::right | ios::hex | ios::showbase);
+   cout.width(30);
+   cout.fill('.');
+   cout << 100 << endl << endl;
+
+   cout.flags(ios::left | ios::dec | ios::showbase);
+   cout.width(30);
+   cout << 100 << endl << endl;
 
    return 0;
 }
