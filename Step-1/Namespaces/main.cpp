@@ -2,8 +2,9 @@
 
 // Namespaces are necessary in large programs.
 // You can now use same names in different parts of programs.
-// Global variables in different namespaces: a and b
-// The C++ standard lib is implemented in std::
+// The C++ standard lib is implemented in the namespace std.
+// The next example shows global variables in different namespaces: 
+// first and second.
 
 namespace first {
 int i = 1;
