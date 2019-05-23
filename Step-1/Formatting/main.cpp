@@ -16,8 +16,8 @@ int main()
    // formatting booleans in text or value format
    bool bft = true;
 
-   cout << "boolean bft = " << boolalpha << bft << endl;
-   cout << "boolean bft = " << noboolalpha << bft << endl;
+   cout << "boolean bft = " << boolalpha << bft << ", " << not bft << endl;
+   cout << "boolean bft = " << noboolalpha << bft << ", " << not bft << endl;
    cout << endl;
 
    // Restore default format status cout
@@ -33,6 +33,7 @@ int main()
       cout.precision(pcs);
       cout << a << "   " << b << "    " << c << endl;
    }
+   cout.precision(5); // maximum number of digits == 5
    cout << "\nfixed:\n" << fixed << a << "  " << b << "  " << c << endl << endl;
    cout << "scientific:\n"
         << scientific << a << "  " << b << "  " << c << endl
@@ -41,14 +42,15 @@ int main()
    // Restore default format status cout
    cout.flags(fmtf);
    // Use cout member functions and format flags in namespace ios
+   // ios::showbase will prefix hex values by 0x
    cout.flags(ios::right | ios::hex | ios::showbase);
    cout.width(30);
    cout.fill('.');
-   cout << 100 << endl << endl;
+   cout << 100 << endl << 10000 << endl;
 
    cout.flags(ios::left | ios::dec | ios::showbase);
    cout.width(30);
-   cout << 100 << endl << endl;
+   cout << 100 << endl << 10000 << endl;
 
    return 0;
 }

@@ -33,6 +33,8 @@
 
 # Qt Creator
 *.pro.user*
+build-*
+.qmake.stash
 
 # Visual Studio Code
 .vscode/*
