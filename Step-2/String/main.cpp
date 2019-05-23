@@ -2,8 +2,8 @@
 #include <string>
 
 // C++ string type: defined in a class, looks like a C struct but now also
-// contains functions (member class functions).
-// The contained string is an dynamic array (can be resized during run time.
+// contains functions (class member functions) besides data members.
+// The contained string is an dynamic array (can be resized during run time).
 
 using namespace std;
 
