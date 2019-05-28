@@ -7,6 +7,9 @@
 
 using namespace std;
 
+// Counting the number of char c in str (call by reference).
+int countChar(const string &str, char c);
+
 int main()
 {
    string str1 = "Hello C++ World"; // str is a string object
@@ -41,5 +44,20 @@ int main()
       cout << "8. str1 equals str2" << endl;
    }
 
+   char c = 't';
+   cout << "9. counted '" << c << "' in str1 = " << countChar(str1, c) << endl;
+
    return 0;
+}
+
+int countChar(const string &str, char c)
+{
+   int count = 0;
+
+   for (size_t i = 0; i < str.size(); i++) {
+      if (str[i] == c) {
+         count++;
+      }
+   }
+   return count;
 }
