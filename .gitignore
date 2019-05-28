@@ -55,3 +55,7 @@ depend
 buildnumber.num
 
 # Executables
+Step-1/Formatting/Formatting
+Step-2/CallByReference/CallByReference
+Step-2/String/String
+Step-2/StringAndC/StringAndC
