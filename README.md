@@ -5,3 +5,23 @@ Introduction C++ programming for C programmers
 - Advanced C  https://github.com/josokw/AdvancedC
 
 Basic Qt C++ GUI programming.
+
+## Step-1
+
+* Namespaces
+* IOstreams: using namespace std, cout, << operator, cin, >> operator
+* Formatting
+* FunctionOverloading
+
+## Step-2
+
+* CallByReference
+* String
+* StringAndC
+
+## Step-3
+
+
+## Step-4
+
+
