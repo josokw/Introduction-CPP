@@ -8,7 +8,7 @@ Basic Qt C++ GUI programming.
 
 ## Step-1
 
-* Namespaces: namespace operator **::**, std namespace
+* Namespaces: **::** scope resolution operator, std namespace
 * IOstreams: using namespace std, cout, << operator, cin, >> operator
 * Formatting
 * FunctionOverloading
