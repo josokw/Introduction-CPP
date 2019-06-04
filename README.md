@@ -8,7 +8,7 @@ Basic Qt C++ GUI programming.
 
 ## Step-1
 
-* Namespaces
+* Namespaces: namespace operator ::
 * IOstreams: using namespace std, cout, << operator, cin, >> operator
 * Formatting
 * FunctionOverloading
@@ -21,7 +21,4 @@ Basic Qt C++ GUI programming.
 
 ## Step-3
 
-
-## Step-4
-
-
+* Rectangle: basic class implementation in C++03, constructor, constructor overloading, getters, setters, const correct
