@@ -21,4 +21,5 @@ Basic Qt C++ GUI programming.
 
 ## Step-3
 
-* Rectangle: basic class implementation in C++03, constructor, constructor initialization list, constructor overloading, class data members, getters, setters, const correct
+* Rectangle: user defined class implementation in C++03, constructor, constructor initialization list, constructor overloading, class data members, getters, setters, const correct
+* Point: user defined class modular implementation in C++03, header and implementation file.
