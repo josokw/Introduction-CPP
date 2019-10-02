@@ -21,5 +21,6 @@ Basic Qt C++ GUI programming.
 
 ## Step-3
 
-* Rectangle: user defined class implementation in C++03, constructor, constructor initialization list, constructor overloading, class data members, getters, setters, const correct
+* Array: standard array templated class <....>, container class, range based for loop, auto type deduction.
+Rectangle: user defined class implementation in C++03, constructor, constructor initialization list, constructor overloading, class data members, getters, setters, const correct.
 * Point: user defined class modular implementation in C++03, header and implementation file.
