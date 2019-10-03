@@ -12,7 +12,8 @@ int countChar(const string &str, char c);
 
 int main()
 {
-   string str1 = "Hello C++ World"; // str is a string object
+   // C++11 uniform initialisation  {...}
+   string str1{"Hello C++ World"}; // str is a string object
 
    cout << "1. str1 = " << str1 << endl;
 
@@ -34,7 +35,8 @@ int main()
    str1.replace(1, 2, "QWERTY");
    cout << "6. str1 = " << str1 << endl;
 
-   string str2 = "Blah blah blah";
+   // C++11 uniform initialisation
+   string str2{"Blah blah blah"};
    // Assign one string object to another, copy str1 to str2
    str2 = str1;
    cout << "7. str2 = " << str2 << endl;
@@ -61,3 +63,15 @@ int countChar(const string &str, char c)
    }
    return count;
 }
+ 
+// int countChar(const string &str, char c)
+// {
+//    int count = 0;
+      // C++11 range based for loop, string container class
+//    for (const auto c_in_str: str) {
+//       if (c_in_str == c) {
+//          count++;
+//       }
+//    }
+//    return count;
+// }
