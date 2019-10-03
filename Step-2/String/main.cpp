@@ -35,7 +35,7 @@ int main()
    cout << "6. str1 = " << str1 << endl;
 
    string str2 = "Blah blah blah";
-   // Assign one string object to another
+   // Assign one string object to another, copy str1 to str2
    str2 = str1;
    cout << "7. str2 = " << str2 << endl;
 
