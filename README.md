@@ -4,7 +4,7 @@ Introduction C++ programming for C programmers
 - Introduction C  https://github.com/josokw/IntroductionC
 - Advanced C  https://github.com/josokw/AdvancedC
 
-Basic Qt C++ GUI programming.
+Basic Qt C++ GUI programming UNDER CONSTRUCTION.
 
 ## Step-1
 
@@ -25,4 +25,4 @@ Basic Qt C++ GUI programming.
 * ForwardList: standard SLL.
 * Rectangle: user defined class implementation in C++03, constructor, constructor initialization list, constructor overloading, class data members, getters, setters, const correct.
 * Point: user defined class modular implementation in C++03, header and implementation file.
-* ObjectSelfie: shows memory adresses of class member functions and data, this pointer, static class member data.
+* ObjectSelfie: shows memory adresses of class member functions and data, this pointer, static class member functions and data.
