@@ -1,4 +1,5 @@
 #include "Point.h"
+
 #include <array>
 #include <cmath>
 #include <iostream>
@@ -25,13 +26,8 @@ int main()
 
    for (size_t i = 0; i < points.size(); i++) {
       for (size_t j = i + 1; j < points.size(); j++) {
-         double delta_x = points[i].get_x() - points[j].get_x();
-         double delta_y = points[i].get_y() - points[j].get_y();
-         double distance =
-            sqrt(delta_x * delta_x + delta_y * delta_y);
-
          cout << "Distance points[" << i << "] to points[" << j
-              << "] = " << distance << endl;
+              << "] = " << points[i].distance(points[j]) << endl;
       }
    }
    cout << endl;

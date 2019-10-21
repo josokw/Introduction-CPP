@@ -35,6 +35,12 @@ void Point::set_y(double y)
    y_ = y;
 }
 
+double Point::distance(const Point &pnt) const
+{
+   return std::sqrt((x_ - pnt.x_) * (x_ - pnt.x_) +
+                    (y_ - pnt.y_) * (y_ - pnt.y_));
+}
+
 void Point::print() const
 {
    std::cout << "[" << x_ << "," << y_ << "]";

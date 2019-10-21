@@ -12,6 +12,7 @@ public:
    double get_y() const;
    void set_x(double x);
    void set_y(double y);
+   double distance(const Point &pnt) const;
    void print() const;
 
 private:
