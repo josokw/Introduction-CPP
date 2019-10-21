@@ -1,13 +1,15 @@
-// C++ class std::array<T, size> is a templated container class that 
+// C++ class std::array<T, size> is a templated container class that
 // encapsulates a fixed size array (no dynamic memory allocation).
 
 #include <algorithm>
 #include <array>
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
 int maxArray(const array<int, 4> &data);
+int maxArray2(const array<int, 4> &data);
 
 int main()
 {
@@ -16,6 +18,7 @@ int main()
    array<int, 4> ar2{a1};          // copy ctor
 
    cout << "Max value in array a1 = " << maxArray(a1) << endl;
+   cout << "Max value in array a1 = " << maxArray2(a1) << endl;
 
    cout << "All values in ar2 = ";
    // Range based for loop, no index anymore!
@@ -42,6 +45,18 @@ int maxArray(const array<int, 4> &data)
       if (data[i] > max) {
          max = data[i];
       }
+   }
+
+   return max;
+}
+
+// Modern C++ implementation, less code!
+int maxArray2(const array<int, 4> &data)
+{
+   auto max = std::numeric_limits<int>::min();
+
+   for (auto d : data) {
+      max = std::max(max, d);
    }
 
    return max;
